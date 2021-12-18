@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Calendar"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".Settings"
+            android:label="Settings"
+            android:parentActivityName=".Calendar"/>
+        <activity android:name=".CreateReminder"
+            android:label="Create A Reminder"
+            android:parentActivityName=".Reminders"/>
+        <activity
+            android:name=".Reminders"
+            android:label="Reminders"
+            android:parentActivityName=".Calendar" />
+        <activity
+            android:name=".Tasks"
+            android:label="Tasks"
+            android:parentActivityName=".Calendar" />
+        <activity
+            android:name=".Notes"
+            android:label="Notes"
+            android:parentActivityName=".Calendar" />
+        <activity
+            android:name=".CreateAnEvent"
+            android:label="Create an event"
+            android:parentActivityName=".Calendar" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Calendar" />
+    </application>
+
+</manifest>

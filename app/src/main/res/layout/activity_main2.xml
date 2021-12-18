@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorOnPrimary">
+
+    <TextView
+        android:id="@+id/EventPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add an event"
+        android:textColor="#01C6B4"
+        android:textSize="24sp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EventPage"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textAutoCorrect|textMultiLine|text|textAutoComplete"
+        android:textSize="24sp"
+        android:backgroundTint="?attr/colorOnSecondary"
+        android:textColor="?attr/colorOnSecondary"
+        android:textColorHint="@color/dark_grey"/>
+
+    <EditText
+        android:id="@+id/descriptionEdit"
+        android:layout_width="355dp"
+        android:layout_height="92dp"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Description"
+        android:inputType="textAutoCorrect|textMultiLine|textAutoComplete"
+        android:backgroundTint="?attr/colorOnSecondary"
+        android:textColor="?attr/colorOnSecondary"
+        android:textColorHint="@color/dark_grey"/>
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionEdit"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="141dp"
+        android:backgroundTint="#01C6B4"
+        android:onClick="openActivity"
+        android:text="Save"
+        app:backgroundTint="#01C6B4" />
+
+    <Button
+        android:id="@+id/timePicker"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionEdit"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="11dp"
+        android:text="Choose time"
+        app:backgroundTint="#01C6B4" />
+
+    <TextView
+        android:id="@+id/viewTime"
+        android:layout_width="99dp"
+        android:layout_height="31dp"
+        android:layout_below="@id/descriptionEdit"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="23dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
